@@ -5,7 +5,7 @@ public class MakeCells {
 		Cell[][] map = new Cell[5][5];
 		for(int i=1;i<=5;i++) {
 			for(int k=1;k<=5;k++) {
-//				Monster testMons = new Monster();
+//				Monster testMons = new Monster();asd
 				//ArrayList<Item> its, String norm,String been,boolean[] opt, int x,int y,ArrayList<Monster> mL,boolean beenB
 				String n = "xy = "+i+" "+k;
 				ArrayList<Monster> mons = new ArrayList<Monster>(10);
