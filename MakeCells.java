@@ -14,6 +14,11 @@ public class MakeCells {
 				map[i-1][k-1]=c;
 			}
 		}
+		ArrayList<Monster> cell1Monster = new ArrayList<Monster>(10);
+		cell1Monster.add(new Monster("Bo", 10, 10, null, 50, 10));
+		map [0][0]= new Cell(new ArrayList<Item>(), "This is the first cell!", "You've been here before it's the first cell!", new boolean[] {true,true,false,false}, 0, 0,
+				cell1Monster, false);
+		
 		return new Map(map,1);
 	}
 }
