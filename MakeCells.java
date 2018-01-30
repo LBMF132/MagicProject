@@ -17,7 +17,7 @@ public class MakeCells {
 		//First Cell [0][0] Monster+Cell creation
 		ArrayList<Monster> cell00Monster = new ArrayList<Monster>(10);
 		cell00Monster.add(new Monster("Bo", 10, 10, null, 50, 10));
-		map [0][0]= new Cell(new ArrayList<Item>(), "This is the first cell!", "You've been here before it's the first cell!", new boolean[] {true,true,false,false}, 0, 0,
+		map [0][0]= new Cell(new ArrayList<Item>(), "This is the first place!", "You've been here before it's the first spot!", new boolean[] {true,true,false,false}, 0, 0,
 				cell00Monster, false);
 		//Cell[0][1] 
 		ArrayList<Monster> cell01Monster = new ArrayList<Monster>(10);
@@ -40,6 +40,8 @@ public class MakeCells {
 		map [0][4]= new Cell(new ArrayList<Item>(), "You're in a pub!", "You've been here before it's the pub!", new boolean[] {false,true,true,false}, 0, 4,
 				cell04Monster, false);
 		//Cell[1][0]
+		
+		
 		
 		return new Map(map,1);
 	}
