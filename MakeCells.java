@@ -40,7 +40,10 @@ public class MakeCells {
 		map [0][4]= new Cell(new ArrayList<Item>(), "You're in a pub!", "You've been here before it's the pub!", new boolean[] {false,true,true,false}, 0, 4,
 				cell04Monster, false);
 		//Cell[1][0]
-		
+		ArrayList<Monster> cell10Monster = new ArrayList<Monster>(10);
+		cell10Monster.add(new Monster("Sahr", 15, 15, null, 30, 10));
+		map [1][0]= new Cell(new ArrayList<Item>(), "You're in a foreigners house!", "You've been here before it's the house!", new boolean[] {true,true,true,false}, 1, 0,
+				cell10Monster, false);
 		
 		
 		return new Map(map,1);
