@@ -8,7 +8,7 @@ public class FightUtil {
 			for (int i = 0; i < ms.size(); i++) {
 				Monster monster = ms.get(i);
 				System.out.println("You're attacked by a "+monster.getName());
-				while (monster.getHp() > 0 || Player.currentHP > 0) {
+				while (monster.getHp() > 0 && Player.currentHP > 0) {
 					Scanner keyScanner = new Scanner(System.in);
 					String cmd = keyScanner.nextLine();
 					// TODO balance

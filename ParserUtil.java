@@ -14,8 +14,9 @@ public class ParserUtil {
 			toRet += i.getName();
 		}
 		toRet += "\nYou can go these directions:";
-		if (currentCell.options[0])
+		if (currentCell.options[0]) {
 			toRet += "\nNorth";
+		}
 		if (currentCell.options[1])
 			toRet += "\nEast";
 		if (currentCell.options[2])
