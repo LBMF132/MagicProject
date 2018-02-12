@@ -54,6 +54,16 @@ public class MakeCells {
 		cell12Monster.add(new Monster("Coolio", 19, 19, null, 30, 10));
 		map [1][2]= new Cell(new ArrayList<Item>(), "You're in a castle!", "You've been here before it's the castle!", new boolean[] {true,true,true,true}, 1, 2,
 				cell12Monster, false);
+		//Cell[1][3]
+		ArrayList<Monster> cell13Monster = new ArrayList<Monster>(20);
+		cell13Monster.add(new Monster("Busta", 20, 20, null, 30, 15));
+		map [1][3]= new Cell(new ArrayList<Item>(), "You're in a abandoned house!", "You've been here before it's the abandoned house!", new boolean[] {true,true,true,true}, 1, 3,
+				cell13Monster, false);
+		//Cell[1][4]
+		ArrayList<Monster> cell14Monster = new ArrayList<Monster>(25);
+		cell14Monster.add(new Monster("Boolin", 25, 25, null, 50, 20));
+		map [1][4]= new Cell(new ArrayList<Item>(), "You're in a canyon!", "You've been here before it's the canyon!", new boolean[] {false,true,true,true}, 1, 4,
+				cell14Monster, false);
 		
 		
 		return new Map(map,1);
